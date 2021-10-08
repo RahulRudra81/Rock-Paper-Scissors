@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  <link rel="stylesheet" href="style.css">
 
-  Score
+  <title> Rock, Paper, Scissors</title>
+
+  <!-- Score
   Rules
 
   You Picked
@@ -17,20 +20,44 @@
   You Win
   You Lose
 
-  Play Again
+  Play Again -->
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
+
 <body>
+  <div class="container">
 
-
-  
-  <div class="attribution">
-    Coded by <a href="https://github.com/RahulRudra81">Rahul Rudra</a>.
+    <div class="about">
+      <div class="logo" >
+       <img src="images/logo.svg">
+      </div>
+      <div class="score-box">
+          <div class="score-head">
+           Score 
+          </div>
+          <div class="score">
+          10
+          </div>
+      </div>
+    </div>
   </div>
+  <div class="flexbox">
+      <div id="paper" >
+        <div class="icons"><img src="images/icon-paper.svg" width="90em"></div>
+      </div>
+      <div id="scissors">
+        <div class="icons"><img src="images/icon-scissors.svg" width="100em"></div>
+      </div>
+      <div id="rock" >
+        <div class="icons"><img src="images/icon-rock.svg" width="90em"> </div>
+      </div>
+  </div>
+
+
+  <!-- <footer class="attribution">
+    Coded by <a href="https://github.com/RahulRudra81">Rahul Rudra</a>.
+  </footer> -->
 </body>
+
 </html>

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: Radial-Gradient(circle, hsl(214, 47%, 23%) , hsl(237, 49%, 15%));
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    
+}
+.about{
+    display: flex;
+    width: 40em;
+    height: 7em;
+    border: 1px solid hsl(217, 16%, 45%);
+    margin-top: 2em;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.score-box{
+    display: flex;
+    flex-direction: column;
+    width: 8em;
+    height: 7rem;
+    background-color: white;
+    border-radius: 10px;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.score-head{
+    text-align: center;
+    color: hsl(229, 64%, 46%);
+    font-size: 1.2rem;
+    font-family: Barlow Semi Condensed;   
+}
+.score{
+    text-align: center;
+    height: 3em;
+    font-size: 4.4rem;
+    color: hsl(229, 25%, 31%);
+}
+.flexbox{
+    display: flex;
+    height: 36em;
+    justify-content: center;  
+    align-items: center; 
+    background-image: url(images/bg-triangle.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-flow: column;
+    /* margin-top: ; */
+}
+.icons{
+    align-self: center;
+}
+#paper{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 3em;
+    right: 8em;
+    border: 20px solid blue;
+    border-style : ridge ;
+    background-color: white;
+    border-radius: 50%;
+    width: 10em;
+    height: 10em;
+}
+#scissors{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 8.8em;
+    left: 8em;
+    border: 20px solid rgb(255, 168, 5);
+    border-bottom-color: yellow;
+    background-color: white;
+    border-radius: 50%;
+    width: 10em;
+    height: 10em;
+}   
+#rock{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 5em;
+    border: 20px solid red;
+    background-color: white;
+    border-radius: 50%;
+    width: 10em;
+    height: 10em;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
