@@ -63,10 +63,8 @@ body{
     display: flex;
     justify-content: center;
     position: relative;
-    top: 4em;
-    right: 8em;
-    border: 20px solid blue;
-    background-color: white;
+    background: white;
+    box-shadow: 0px -5px 0px 0px #baafaf;
     border-radius: 50%;
     width: 8em;
     height: 8em;
