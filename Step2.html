@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rock, Paper, Scissors</title>
+
+    <!-- Score
+  Rules
+
+  You Picked
+  The House Picked
+
+  You Win
+  You Lose
+
+  Play Again -->
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="about">
+        <div class="logo"><img src="images/logo.svg" /></div>
+        <div class="score-box">
+          <div class="score-head">Score</div>
+          <div class="score">10</div>
+        </div>
+      </div>
+    </div>
+    <div class="step2">
+        <div class="choice-heading">
+        <div class="you">YOU PICKED</div>
+        <div class="house">HOUSE PICKED</div>
+    </div>
+    <div class="choice-pics">
+        <div class="userbg">
+        <div id="user">
+          <div class="icons">
+            <img src="images/icon-paper.svg" width="85em" />
+          </div>
+        </div>
+      </div>
+      <div class="userbg">
+        <div id="user">
+          <div class="icons"><img src="images/icon-paper.svg" width="85em" /></div>
+        </div>
+      </div>
+      </div>
+      </div>
+    <script>
+      function showRules()
+{
+    var popup = document.getElementsByClassName("modal");
+    popup[0].classList.add('active');
+}
+
+function hideRules()
+{
+    var popup = document.getElementsByClassName("modal");
+    popup[0].classList.remove('active');
+}
+
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

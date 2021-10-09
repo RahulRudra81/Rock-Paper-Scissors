@@ -188,3 +188,54 @@ body {
 {
     opacity: 1;
 }
+.step2 {
+  display: flex;
+  flex-direction: column;
+  height:30em;
+  justify-content: space-evenly;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.userbg{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: white;
+  height: 10em;
+  width: 10em;
+  border: 20px solid blue;
+  border-radius: 50%;
+  border-bottom: 21px solid #0000f9;
+  box-shadow: 1px 6px 1px 0px #0b0ba3;
+}
+#user {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background: white;
+  box-shadow: 0px -8px 0px 0px #baafaf;
+  border-radius: 100%;
+  width: 10em;
+  height: 9em;
+}
+
+.choice-heading{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+}
+.choice-pics{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  column-gap: 5em;
+}
+.house{
+  position: relative;
+  left: 1.5em;
+}
