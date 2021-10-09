@@ -55,7 +55,6 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     flex-flow: column;
-    /* margin-top: ; */
 }
 .icons{
     align-self: center;
@@ -64,44 +63,54 @@ body{
     display: flex;
     justify-content: center;
     position: relative;
-    top: 3em;
+    top: 4em;
     right: 8em;
     border: 20px solid blue;
-    border-style : ridge ;
     background-color: white;
     border-radius: 50%;
-    width: 10em;
-    height: 10em;
+    width: 8em;
+    height: 8em;
 }
 #scissors{
     display: flex;
     justify-content: center;
     position: relative;
-    bottom: 8.8em;
+    bottom: 6em;
     left: 8em;
     border: 20px solid rgb(255, 168, 5);
-    border-bottom-color: yellow;
     background-color: white;
-    border-radius: 50%;
-    width: 10em;
-    height: 10em;
+    border-radius: 100%;
+    width: 8em;
+    height: 8em;
 }   
 #rock{
     display: flex;
     justify-content: center;
     position: relative;
-    bottom: 5em;
-    border: 20px solid red;
+    bottom: 3em;
+    border: 22px solid red;
     background-color: white;
-    border-radius: 50%;
-    width: 10em;
-    height: 10em;
+    border-radius: 100%;
+    width: 8em;
+    height: 8em;
 }
-.attribution {
-    font-size: 11px;
+.rules{
+    display: flex;
+    justify-content: center;
     text-align: center;
-  }
-
-  .attribution a {
-    color: hsl(228, 45%, 44%);
-  }
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    font-family: Barlow Semi Condensed ;
+    font-size: 2em;
+    align-self: flex-end;
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 1.3em;
+    width: 5em;
+    transition: 0.3s all ease;
+    color: white;
+}
+.rules :hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
