@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rock, Paper, Scissors</title>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <title> Rock, Paper, Scissors</title>
-
-  <!-- Score
+    <!-- Score
   Rules
 
   You Picked
@@ -20,59 +24,71 @@
   You Lose
 
   Play Again -->
+  </head>
 
-
-</head>
-
-<body>
-  <div class="container">
-
-    <div class="about">
-      <div class="logo">
-        <img src="images/logo.svg">
-      </div>
-      <div class="score-box">
-        <div class="score-head">
-          Score
+  <body>
+    <div class="container">
+      <div class="about">
+        <div class="logo">
+          <img src="images/logo.svg" />
         </div>
-        <div class="score">
-          10
+        <div class="score-box">
+          <div class="score-head">Score</div>
+          <div class="score">10</div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="flexbox">
-    <div class="background-paper">
-      <div id="paper">
-        <div class="icons"><img src="images/icon-paper.svg" width="85em"></div>
+    <div class="flexbox">
+      <div class="background-paper">
+        <div id="paper">
+          <div class="icons">
+            <img src="images/icon-paper.svg" width="85em" />
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="background-scissors">
-      <div id="scissors">
-        <div class="icons"><img src="images/icon-scissors.svg" width="85em"></div>
+      <div class="background-scissors">
+        <div id="scissors">
+          <div class="icons">
+            <img src="images/icon-scissors.svg" width="85em" />
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="background-rock">
-      <div id="rock">
-        <div class="icons"><img src="images/icon-rock.svg" width="90em"> </div>
+      <div class="background-rock">
+        <div id="rock">
+          <div class="icons">
+            <img src="images/icon-rock.svg" width="90em" />
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="rules">
-      <div id="rulehead">
-          RULES 
-      </div>
+      <div class="rules" onclick="showRules()">
+        <div id="rulehead">RULES</div>
       </div>
       <div class="modal">
         <div class="modalhead">
-          <span>RULES</span>
-          <span><img src="images/close.png" height="25em" width="25em"></span>
-          </div>
-        <div class="modalcontent">
-          <img src="images/image-rules.svg" class="modalImg">
+          <span style="font-size: 2.2rem; font-family: Barlow Semi Condensed"
+            >RULES</span
+          >
+          <span onclick="hideRules()"><img src="images/icon-close.svg" height="25em" width="25em" /></span>
         </div>
+        <div class="modalcontent">
+          <img src="images/image-rules.svg" class="modalImg" />
+        </div>
+      </div>
     </div>
-  </div>
-  <script src="script.js"></script>
-</body>
+    <script>
+      function showRules()
+{
+    var popup = document.getElementsByClassName("modal");
+    popup[0].classList.add('active');
+}
 
+function hideRules()
+{
+    var popup = document.getElementsByClassName("modal");
+    popup[0].classList.remove('active');
+}
+
+    </script>
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -45,17 +45,14 @@ function calulate(playerChoice,computerChoice)
     }
 }
 
-score[0].innerHTML = "Lauda";
-
-function laudaLassan()
+function showRules()
 {
-    var value = score[0].innerHTML;
-    if(value == "Lauda")
-    {
-        score[0].innerHTML = "Lassan";
-    }
-    else
-    score[0].innerHTML = "Lauda"
+    var popup = document.getElementsByClassName("modal");
+    popup[0].classList.add('active');
 }
-setInterval(laudaLassan, 500);
 
+function hideRules()
+{
+    var popup = document.getElementsByClassName("modal");
+    popup[0].classList.remove('active');
+}
