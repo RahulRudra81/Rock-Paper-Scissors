@@ -1,7 +1,7 @@
-var score = document.getElementById('Score');
-var st = document.getElementById('stone');
-var pa = document.getElementById('paper');
-var sc = document.getElementById('scissors');
+var score = document.getElementsByClassName('score');
+var st = document.getElementsByClassName('stone');
+var pa = document.getElementsByClassName('paper');
+var sc = document.getElementsByClassName('scissors');
 
 var keys = ["stone", "paper", "scissors"];
       
@@ -44,3 +44,18 @@ function calulate(playerChoice,computerChoice)
         scoreIncrement();
     }
 }
+
+score[0].innerHTML = "Lauda";
+
+function laudaLassan()
+{
+    var value = score[0].innerHTML;
+    if(value == "Lauda")
+    {
+        score[0].innerHTML = "Lassan";
+    }
+    else
+    score[0].innerHTML = "Lauda"
+}
+setInterval(laudaLassan, 500);
+
