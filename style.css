@@ -73,11 +73,9 @@ body{
     display: flex;
     justify-content: center;
     position: relative;
-    bottom: 6em;
-    left: 8em;
-    border: 20px solid rgb(255, 168, 5);
-    background-color: white;
-    border-radius: 100%;
+    background: white;
+    box-shadow: 0px -5px 0px 0px #baafaf;
+    border-radius: 50%;
     width: 8em;
     height: 8em;
 }   
@@ -85,12 +83,55 @@ body{
     display: flex;
     justify-content: center;
     position: relative;
-    bottom: 3em;
-    border: 22px solid red;
-    background-color: white;
-    border-radius: 100%;
+    background: white;
+    box-shadow: 0px -5px 0px 0px #baafaf;
+    border-radius: 50%;
     width: 8em;
     height: 8em;
+}
+.background-paper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: white;
+    height: 8em;
+    width: 8em;
+    top: 4em;
+    right: 8em;
+    border: 20px solid blue;
+    border-radius: 50%;
+    border-bottom: 21px solid #0000f9;
+    box-shadow:1px 6px 1px 0px #0b0ba3;
+}
+.background-scissors{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: white;
+    height: 8em;
+    width: 8em;
+    bottom: 6.6em;
+    left: 7em;
+    border: 20px solid rgb(255, 168, 5);
+    border-radius: 50%;
+    border-bottom: 21px solid rgb(255, 168, 5);
+    box-shadow:1px 6px 1px 0px #a37a0b;
+}
+.background-rock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: white;
+    height: 8em;
+    width: 8em;
+    bottom: 2em;
+    border: 20px solid red;
+    border-radius: 50%;
+    border-bottom: 21px solid red;
+    box-shadow:1px 6px 1px 0px #810a0a;
 }
 .rules{
     display: flex;
@@ -111,4 +152,33 @@ body{
 .rules :hover{
     transform: scale(1.1);
     cursor: pointer;
+}
+.modal{
+    background-color: white;
+    position: fixed;
+    height: 50%;
+    width: 100%;
+    z-index: 1;
+    overflow: auto;
+    top: 15em;
+    padding: 20px;
+}
+.modalcontent{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+.modalImg{
+    width: 50%;
+    height: 50%;
+}
+.modalhead{
+    position: absolute;
+
+}
+.close{
+    position: absolute;
+
 }
