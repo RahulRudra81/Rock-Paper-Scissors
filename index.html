@@ -34,26 +34,26 @@
         </div>
         <div class="score-box">
           <div class="score-head">Score</div>
-          <div class="score">10</div>
+          <div id="score" class="score">0</div>
         </div>
       </div>
     </div>
     <div class="flexbox">
-      <div class="background-paper">
+      <div class="background-paper" onclick="choicefx(2)">
         <div id="paper">
           <div class="icons">
             <img src="images/icon-paper.svg" width="85em" />
           </div>
         </div>
       </div>
-      <div class="background-scissors">
+      <div class="background-scissors" onclick="choicefx(3)">
         <div id="scissors">
           <div class="icons">
             <img src="images/icon-scissors.svg" width="85em" />
           </div>
         </div>
       </div>
-      <div class="background-rock">
+      <div class="background-rock" onclick="choicefx(1)">
         <div id="rock">
           <div class="icons">
             <img src="images/icon-rock.svg" width="90em" />
@@ -68,7 +68,9 @@
           <span style="font-size: 2.2rem; font-family: Barlow Semi Condensed"
             >RULES</span
           >
-          <span onclick="hideRules()"><img src="images/icon-close.svg" height="25em" width="25em" /></span>
+          <span onclick="hideRules()"
+            ><img src="images/icon-close.svg" height="25em" width="25em"
+          /></span>
         </div>
         <div class="modalcontent">
           <img src="images/image-rules.svg" class="modalImg" />
@@ -76,18 +78,39 @@
       </div>
     </div>
     <script>
-      function showRules()
-{
-    var popup = document.getElementsByClassName("modal");
-    popup[0].classList.add('active');
-}
+      localStorage.setItem("score", scoreCount);
 
-function hideRules()
-{
-    var popup = document.getElementsByClassName("modal");
-    popup[0].classList.remove('active');
-}
+      function pcChoicefx() {
+        var pcc = Math.floor(Math.random() * 3);
+        return pcc;
+      }
 
+      var redirect = () => window.location = "./Match.html";
+
+      function choicefx(choice) {
+        console.log("Success");
+        if (choice == 1) localStorage.setItem("userChoice", "rock");
+        else if (choice == 2) localStorage.setItem("userChoice", "paper");
+        else localStorage.setItem("userChoice", "scissors");
+        
+        var pcChoice = pcChoicefx();
+        if (pcChoice == 1) localStorage.setItem("pcChoice", "rock");
+        else if (pcChoice == 2) localStorage.setItem("pcChoice", "paper");
+        else localStorage.setItem("pcChoice", "scissors");
+
+        redirect();
+        
+      }
+
+      function showRules() {
+        var popup = document.getElementsByClassName("modal");
+        popup[0].classList.add("active");
+      }
+
+      function hideRules() {
+        var popup = document.getElementsByClassName("modal");
+        popup[0].classList.remove("active");
+      }
     </script>
     <script src="script.js"></script>
   </body>
